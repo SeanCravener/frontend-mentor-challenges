@@ -7,25 +7,29 @@
   --neutral-two: hsl(217, 19%, 24%);
   --neutral-three: hsl(218, 23%, 16%);
 
+  --ff-main: "Manrope", sans-serif;
   --fs-main: 28px;
   --fw-main: 800;
 }
 
-#root {
+body {
+  background-color: var(--neutral-three);
   font-size: var(--fs-main);
   font-weight: var(--fw-main);
+}
+
+#root {
   height: 100vh;
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color: var(--neutral-three);
 }
 
 .advice-generator {
-  font-family: "Manrope", sans-serif;
+  font-family: var(--ff-main);
   margin-left: 1rem;
   margin-right: 1rem;
-  padding: 1.5em;
+  padding: 1.5rem;
   background-color: var(--neutral-two);
   border-radius: 15px;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -39,8 +43,7 @@
   font-size: var(--fs-main);
   font-weight: var(--fw-main);
   color: var(--primary-one);
-  padding: 1rem;
-  margin: 0;
+  margin: 1rem 0.5rem;
 }
 
 .advice-id {
@@ -53,13 +56,14 @@
 .advice-btn {
   background-color: var(--primary-two);
   background-image: url("./assets/icon-dice.svg");
+  background-size: 1rem;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 1em;
+  padding: 1.5rem;
   border-radius: 50%;
   border: none;
   margin: 0;
-  transform: translateY(2.5em);
+  transform: translateY(2.85rem);
 }
 
 .advice-btn:active {
@@ -67,13 +71,19 @@
 }
 
 .advice-divider {
-  background-image: url("./assets/pattern-divider-desktop.svg");
+  background-image: url("./assets/pattern-divider-mobile.svg");
   padding: 1rem;
   margin: 0;
-  margin-bottom: -1.5em;
+  margin-bottom: -1.5rem;
   background-color: transparent;
   background-position: bottom;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 300px) {
+  .advice-divider {
+    background-image: url("./assets/pattern-divider-desktop.svg");
+  }
 }
 
 @media screen and (min-width: 650px) {
@@ -84,6 +94,12 @@
 
 @media screen and (min-width: 900px) {
   .advice-generator {
-    max-width: 35%;
+    max-width: 45%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .advice-generator {
+    max-width: 500px;
   }
 }
