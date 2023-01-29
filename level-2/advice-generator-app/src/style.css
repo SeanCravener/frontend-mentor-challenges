@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --primary-one: hsl(193, 38%, 86%);
+  --primary-two: hsl(150, 100%, 66%);
+  --neutral-one: hsl(217, 19%, 38%);
+  --neutral-two: hsl(217, 19%, 24%);
+  --neutral-three: hsl(218, 23%, 16%);
+
+  --fs-main: 28px;
+  --fw-main: 800;
+}
+
+#root {
+  font-size: var(--fs-main);
+  font-weight: var(--fw-main);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: var(--neutral-three);
+}
+
+.advice-generator {
+  font-family: "Manrope", sans-serif;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1.5em;
+  background-color: var(--neutral-two);
+  border-radius: 15px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.advice {
+  font-size: var(--fs-main);
+  font-weight: var(--fw-main);
+  color: var(--primary-one);
+  padding: 1rem;
+  margin: 0;
+}
+
+.advice-id {
+  font-size: 0.4em;
+  color: var(--primary-two);
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.advice-btn {
+  background-color: var(--primary-two);
+  background-image: url("./assets/icon-dice.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1em;
+  border-radius: 50%;
+  border: none;
+  margin: 0;
+  transform: translateY(2.5em);
+}
+
+.advice-btn:active {
+  box-shadow: 0 0 1em 0.25em var(--primary-two);
+}
+
+.advice-divider {
+  background-image: url("./assets/pattern-divider-desktop.svg");
+  padding: 1rem;
+  margin: 0;
+  margin-bottom: -1.5em;
+  background-color: transparent;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 650px) {
+  .advice-generator {
+    max-width: 65%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .advice-generator {
+    max-width: 35%;
+  }
+}
