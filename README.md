@@ -27,7 +27,7 @@ Repository for all of the Frontend Mentor challenges I've completed or I'm in th
 
 - [Single Price Grid Component](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)
   - [Github Link](https://github.com/SeanCravener/frontend-mentor-challenges/tree/main/level-1/single-price-grid)
-  - [Live Link]()
+  - [Live Link](https://codepen.io/Beelzeboss92/pen/ExppELE)
 
 ### Level 2
 
